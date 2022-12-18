@@ -47,9 +47,9 @@ btnMobileNav.addEventListener("click", function () {
 });
 
 //MODAL WINDOW
-window.onload = function () {
+window.addEventListener("load", function () {
   document.getElementById("modal-container").style.display = "block";
-};
+});
 
 document.getElementById("close-button").addEventListener("click", function () {
   document.getElementById("modal-container").style.display = "none";
@@ -62,15 +62,34 @@ modalBtn.addEventListener("click", function () {
 });
 
 // CHECKBOX VALIDATION
-// get a reference to the checkbox element
-const checkbox = document.querySelector("#smartwatch-check");
-// get a reference to the price element
-const price = document.querySelector(".discount-paragraph");
-// add a 'change' event listener to the checkbox
-checkbox.addEventListener("change", function () {
-  // if the checkbox is checked
-  if (this.checked) {
-    // log the price to the console
-    console.log(price.textContent);
-  }
+// get a reference to all the checkbox elements
+// get a reference to all the checkbox elements
+const checkboxes = document.querySelectorAll(
+  '.smartwatch input[type="checkbox"]'
+);
+
+let total = 0; // variable to store the total price
+
+// add a 'change' event listener to each checkbox
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", function () {
+    // if the checkbox is checked
+    if (this.checked) {
+      // get a reference to the price element
+      const price = this.parentElement.parentElement.parentElement
+        .querySelector(".discount-paragraph")
+        .textContent.replace("$", "");
+      // add the price to the total
+      total += parseFloat(price);
+    } else {
+      // if the checkbox is unchecked, get a reference to the price element
+      const price = this.parentElement.parentElement.parentElement
+        .querySelector(".discount-paragraph")
+        .textContent.replace("$", "");
+      // subtract the price from the total
+      total -= parseFloat(price);
+    }
+    // log the total to the console
+    console.log(total);
+  });
 });
