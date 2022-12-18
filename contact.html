@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
     <title>Contact-page</title>
   </head>
   <body>
@@ -27,6 +28,36 @@
       </div>
       <!-- /* SECTION CONTACT */ -->
       <div class="section-contact">
+        <div id="modal-container">
+          <div id="modal" class="grid grid--2--cols">
+            <button id="close-button">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div id="content">
+              <img
+                src="https://www.apple.com/v/apple-watch-ultra/d/images/overview/endurance/endurance_gps_float__d6e0i9odzviq_large.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="modal-content">
+              <h1 class="modal-heading">
+                Subscribe <br />
+                our newsletter
+              </h1>
+              <p class="watch-description">
+                Sign up here to get 20% off on <br />
+                your next purchase, special...
+              </p>
+              <input
+                type="email"
+                class="modal-input"
+                id="email-input"
+                placeholder="Enter your email.."
+              />
+              <a class="modal-button" id="subscribe-button">Subscribe</a>
+            </div>
+          </div>
+        </div>
         <div class="heading">
           <h1 class="heading-tertiary">How We Can Help You?</h1>
           <p class="subheading">
@@ -90,75 +121,83 @@
         </div>
       </div>
 
-      <!-- /* SECTION FOOTER */ -->
-      <footer>
-        <div class="content">
-          <div class="footer-column">
-            <h3>Company Info</h3>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Carrier</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Legal</h3>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Carrier</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Features</h3>
-            <ul>
-              <li><a href="#">Business Marketing</a></li>
-              <li><a href="#">User Analytic</a></li>
-              <li><a href="#">Live Chat</a></li>
-              <li><a href="#">Unlimited Support</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="#">IOS & Android</a></li>
-              <li><a href="#">Watch a Demo</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">API</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Get In Touch</h3>
-            <ul>
+      <!-- /* FOOTER */ -->
+      <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#"
+              ><img class="logo" src="./img/logo.png" alt="ORALIFE logo"
+            /></a>
+            <ul class="social-links">
               <li>
-                <a href="#"
-                  ><ion-icon name="call-outline"></ion-icon> (480) 555-0103</a
-                >
+                <a href="#" class="footer-link">
+                  <ion-icon
+                    class="social-icons"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><ion-icon name="location-outline"></ion-icon>4517 Washington
-                  Ave.Manchester, Kentucky 39495</a
-                >
+                <a href="#" class="footer-link">
+                  <ion-icon
+                    class="social-icons"
+                    name="logo-facebook"
+                  ></ion-icon>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><ion-icon name="mail-outline"></ion-icon
-                  >debra.holt@example.com</a
-                >
+                <a href="#" class="footer-link">
+                  <ion-icon class="social-icons" name="logo-twitter"></ion-icon>
+                </a>
               </li>
             </ul>
+            <p class="copyright">
+              Copyright &copy; 2027 by ORALIFE,Inc. All rights reserved.
+            </p>
           </div>
-        </div>
-        <div class="footer-text">
-          <p>Made with love from Ariani</p>
-          <div class="footer-icon">
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-            <ion-icon name="logo-twitter"></ion-icon>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                1234 Harrison St., San Francisco, United States
+              </p>
+              <p>
+                <a class="footer-link" href="123-456-7890">
+                  Phone:123-456-7890
+                </a>
+                <a class="footer-link" href="mailto:hello@oralife.com"
+                  >hello@oralife.com</a
+                >
+              </p>
+            </address>
           </div>
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">My Account</a></li>
+              <li><a class="footer-link" href="#">Order History</a></li>
+              <li><a class="footer-link" href="#">Wish List</a></li>
+              <li><a class="footer-link" href="#">Newsletter</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Business</a></li>
+              <li><a class="footer-link" href="#">Shop</a></li>
+              <li><a class="footer-link" href="#">Accessibility</a></li>
+              <li><a class="footer-link" href="#">Education</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Privacy</a></li>
+              <li><a class="footer-link" href="#">Events</a></li>
+              <li><a class="footer-link" href="#">Financing</a></li>
+              <li><a class="footer-link" href="#">Gift Card</a></li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </main>

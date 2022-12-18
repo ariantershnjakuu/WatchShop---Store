@@ -1,6 +1,5 @@
-@import "query.css";
-@import "contact.css";
-@import "product.css";
+@import "./contact.css";
+@import "./product.css";
 
 * {
   margin: 0;
@@ -11,6 +10,7 @@
 html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555555;
+  overflow-x: hidden;
 }
 
 /*********************************/
@@ -48,6 +49,10 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .heading-primary,
@@ -155,6 +160,101 @@ body {
   padding-right: 5px;
 }
 
+/* MODAL WINDOW */
+#modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+#modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 60rem;
+  background: #fefefe;
+  border-radius: 0.2rem;
+  padding: 5rem;
+}
+
+#content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+#close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  font-size: 2.8rem;
+  color: #555555;
+  cursor: pointer;
+}
+
+.modal-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2.5rem;
+  border: 1px solid #4066e0;
+  box-shadow: inset 0 0 0 1px #4066e0;
+  color: #4066e0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: #4066e0;
+  color: #ecf0fc;
+  border: 1px solid #4066e0;
+  box-shadow: inset 0 0 0 1px #4066e0;
+}
+
+.modal-input {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #767676;
+  padding: 1.2rem;
+  border: 2px solid #dbdbdb;
+  text-align: center;
+}
+
+.modal-input:focus {
+  outline: none;
+}
+
 /*********************************/
 /* HEADER */
 /*********************************/
@@ -166,6 +266,7 @@ body {
   /* Because we want header to be sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -196,6 +297,24 @@ body {
   color: #4066e0;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*********************************/
 /* SECTION HEAD */
 /*********************************/
@@ -212,7 +331,7 @@ body {
 
 .head {
   max-width: 130rem;
-  min-width: 130rem;
+  min-width: 100vw;
   margin: 0 auto;
   padding: 0 2.2rem;
   display: grid;
@@ -224,7 +343,6 @@ body {
 .head-text-box {
   align-self: center;
   justify-self: center;
-  margin-left: 4rem;
 }
 
 .head-description {
@@ -289,7 +407,7 @@ body {
 
 .grid-3 {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   justify-self: center;
   align-self: center;
 }
@@ -356,6 +474,11 @@ body {
 
 .smartwatch {
   position: relative;
+  transition: all 0.5s;
+}
+
+.smartwatch:hover {
+  transform: translateY(-1.1rem);
 }
 
 .features {
@@ -392,6 +515,16 @@ body {
   transition: all 0.7s;
 }
 
+#smartwatch-check {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  font-size: 1.6rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
 /*********************************/
 /* SECTION ADVANTAGE */
 /*********************************/
@@ -402,8 +535,8 @@ body {
   align-items: center;
   text-align: center;
   padding: 6.8rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)),
-    url("https://www.apple.com/v/apple-watch-series-8/b/images/overview/design/design_tougher__p6gu30ck6uqu_large.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.5)),
+    url("https://www.apple.com/v/apple-watch-ultra/d/images/overview/outdoor/adventure_metrics__cngpug9ytqj6_large.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -556,7 +689,7 @@ body {
 
 .section-call-to-action {
   display: flex;
-  width: 100rem;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -667,7 +800,7 @@ body {
 .card,
 .card-2,
 .card-3 {
-  background-image: url("https://img.freepik.com/premium-photo/woman-looking-her-smartwatch-hand_34944-188.jpg?w=2000");
+  background-image: url("https://img.freepik.com/premium-vector/boost-completed-smartwatch-interface-vector-template-mobile-app-notification-night-mode-design-successful-memory-cleaning-notice-screen-flat-ui-application-message-smart-watch-display_106317-7443.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -679,15 +812,16 @@ body {
   gap: 1.6rem;
   text-align: center;
   position: relative;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 10%);
 }
 
 .card-2 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4uu2Xpqlu-Lcj0FJRofppaWb3b_PiFiXvA&usqp=CAU");
+  background-image: url("https://img.freepik.com/premium-vector/video-broadcasting-smartwatch-interface-vector-template-mobile-app-notification-night-mode-design-watch-new-stream-screen-flat-ui-application-play-button-smart-watch-display_106317-6121.jpg");
 }
 
 .card-3 {
-  background-image: url("https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2021/08/galaxy_watch_4_apps_1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1");
+  background-image: url("https://img.freepik.com/premium-vector/system-backup-smartwatch-interface-vector-template-mobile-app-notification-night-mode-design-files-copying-process-screen-flat-ui-application-server-uploading-progress-smart-watch-display_106317-6113.jpg");
 }
 
 .mini-card {
@@ -701,10 +835,11 @@ body {
   gap: 0.5rem;
   text-align: center;
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 10%;
   border-radius: 0.2rem;
   padding: 2rem;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 10%);
 }
 
 .heading-news {
@@ -736,7 +871,7 @@ body {
 /*********************************/
 
 .section-support .grid {
-  padding: 6.8rem 14.8rem;
+  padding: 9.6rem 14.8rem;
   gap: 0;
 }
 
@@ -761,98 +896,78 @@ body {
 }
 
 /*********************************/
-/* SECTION FOOTER */
+/* FOOTER */
 /*********************************/
 
-footer {
-  padding: 4rem 0;
-  background-color: #f8f7f7;
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #ddd;
 }
 
-footer .content {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 4rem;
-  max-width: 192rem;
-  padding-top: 4rem;
-  margin: auto;
-  width: 80%;
-  background-color: #f8f7f7;
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
-footer .content ul li,
-a:visited,
-footer .content ul li,
-a:link {
-  list-style: none;
-  margin: 1.5rem 0;
-  text-decoration: none;
-  color: #626262;
-  font-size: 1.3rem;
-  font-weight: 500;
-  transition: 0.3s ease-in-out;
-}
-
-footer .content ul li a:hover,
-footer .content ul li a:active {
-  color: #4066e0;
-}
-
-footer .content h3 {
-  color: #000;
-  font-size: 2rem;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-}
-
-footer .content h3:hover,
-footer .content h3:active {
-  color: #4066e0;
-  cursor: pointer;
-}
-
-.footer-column li ion-icon {
-  color: #4066e0;
-  margin-right: 1rem;
-  font-size: 2.5rem;
-}
-
-.footer-text {
+.logo-col {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 192rem;
-  margin: 0;
-  background-color: #f8f7f7;
-  padding: 1.5rem 10rem;
+  flex-direction: column;
 }
 
-.footer-text p {
-  color: #626262;
-  font-size: 1.3rem;
+.footer-logo {
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: 3rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
   font-weight: 600;
+  margin-bottom: 4rem;
 }
 
-.footer-text p a {
-  color: #4066e0;
-  font-size: 1.3rem;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
-.footer-text p a:hover,
-.footer-text p a:active {
-  color: #4066e0;
+.address {
+  margin-bottom: 2.4rem;
 }
 
-.footer-icon {
-  color: #555555;
-  font-size: 2rem;
-  transition: 0.3s ease-in-out;
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
-.footer-icon ion-icon:hover,
-.footer-icon ion-icon:active {
-  color: #4066e0;
-  cursor: pointer;
+.footer-link:link,
+.footer-link:visited {
+  color: #767676;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }

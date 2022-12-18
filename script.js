@@ -36,3 +36,41 @@ nextBtn.addEventListener("click", function () {
 
 // Initialize the carousel by setting the initial item
 updateItem(currentIndex);
+
+// Mobile navigation toggle
+const btnMobileNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+// Add an event listener to the button
+btnMobileNav.addEventListener("click", function () {
+  // Toggle the "open" class on the menu
+  header.classList.toggle("nav-open");
+});
+
+//MODAL WINDOW
+window.onload = function () {
+  document.getElementById("modal-container").style.display = "block";
+};
+
+document.getElementById("close-button").addEventListener("click", function () {
+  document.getElementById("modal-container").style.display = "none";
+});
+
+const modalBtn = document.querySelector("#subscribe-button");
+modalBtn.addEventListener("click", function () {
+  var email = document.getElementById("email-input").value;
+  console.log(`Email: ${email}`);
+});
+
+// CHECKBOX VALIDATION
+// get a reference to the checkbox element
+const checkbox = document.querySelector("#smartwatch-check");
+// get a reference to the price element
+const price = document.querySelector(".discount-paragraph");
+// add a 'change' event listener to the checkbox
+checkbox.addEventListener("change", function () {
+  // if the checkbox is checked
+  if (this.checked) {
+    // log the price to the console
+    console.log(price.textContent);
+  }
+});

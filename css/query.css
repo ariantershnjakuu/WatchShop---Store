@@ -1,50 +1,256 @@
-/* @media screen and (max-width: 768px) {
-  .section-head .head {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+/*********************************/
+/* BELOW 1344px (smaller desktops)  */
+/*********************************/
+
+@media only screen and (max-width: 84em) {
+  .head {
+    max-width: 120rem;
   }
 
-  .header .main-nav {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .container-contact {
+    margin: 4rem 10rem;
+  }
+
+  #description {
+    margin: 0 10rem 4rem;
+  }
+}
+
+/*********************************/
+/* BELOW 1200px (Tablets)  */
+/*********************************/
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-news {
+    padding: 6.8rem 4rem 14.8rem;
+  }
+
+  .watch-btn {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .grid-3 {
+    gap: 2rem;
+  }
+
+  .header {
+    padding: 0 8rem;
+  }
+}
+
+/*********************************/
+/* BELOW 944px (Tablets)  */
+/*********************************/
+
+@media only screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .first-layer {
+    padding: 15.2rem 40.9rem;
+  }
+
+  .second-layer {
+    width: 81.8rem;
+    height: 30rem;
+    padding: 7rem 18rem;
+  }
+
+  .section-news {
+    padding: 6.8rem 0 14.8rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60rem;
+    transform: translateX(100%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
-  .section-how .container {
-    display: grid;
+  .main-nav-list {
+    flex-direction: column;
+    gap: 3.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/*********************************/
+/* BELOW 704px (Smaller tablets)  */
+/*********************************/
+
+@media only screen and (max-width: 44em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .head {
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .head-img-box img {
+    border: 2px dotted #333;
+    border-radius: 100%;
+    width: 40%;
+    padding: 3rem 2rem;
+  }
+
+  .grid--2--cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .step-img-box {
+    justify-content: center;
+  }
+
+  .step-text-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .advantage-description {
+    margin: 0px 56rem 3.5rem;
+  }
+
+  .watch-img-box img {
+    width: 50%;
+    border-radius: 2rem;
+  }
+
+  .grid-news {
+    row-gap: 15rem;
+  }
+
+  .support-card {
+    margin-bottom: 2.8rem;
+  }
+
+  .section-call-to-action {
+    display: none;
+  }
+  .main-nav {
+    height: 85rem;
+  }
+
+  .watch-btn {
+    align-self: center;
+  }
+
+  .watch-text-box {
+    text-align: center;
+  }
+}
+
+/*********************************/
+/* BELOW 544px (Phones)  */
+/*********************************/
+@media only screen and (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .header {
+    padding: 0 3rem;
+  }
+
+  .step-img-box img {
+    width: 30rem;
   }
 
   .section-how .step-text-box {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr) !important;
+    text-align: center;
   }
 
-  .section-product .grid-3 {
-    overflow-x: scroll;
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 
-  .section-watches .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .section-call-to-action .container {
-    display: none;
-  }
-
-  .section-news .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  footer .content {
-    display: grid !important;
+  .grid--footer {
     grid-template-columns: repeat(2, 1fr) !important;
-    margin: 10px;
+  }
+
+  .watch-text-box-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    text-align: center;
+  }
+
+  .support-card {
+    margin-bottom: 3.8rem;
+  }
+
+  .product-description {
+    max-width: 30%;
+    text-align: center;
+  }
+
+  .img-description img {
+    width: 20rem;
+    align-self: center;
+  }
+  .main-nav {
+    height: 82rem;
   }
 }
-
-@media screen and (min-width: 548px) {
-  .popular-col {
-    margin: 0 40px;
-  }
-} */
