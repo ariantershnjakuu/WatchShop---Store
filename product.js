@@ -119,17 +119,38 @@ buyNowBtn.addEventListener("click", () => {
   console.log(`Quantity: ${quantityInput.value}`);
 });
 
-//MODAL WINDOW
-window.onload = function () {
-  document.getElementById("modal-container").style.display = "block";
-};
+//PRODUCTS JSON
+const productContainer = document.getElementById("product-container");
 
-document.getElementById("close-button").addEventListener("click", function () {
-  document.getElementById("modal-container").style.display = "none";
-});
+fetch("products.json")
+  .then((response) => response.json())
+  .then((products) => {
+    products.forEach((product) => {
+      const productCard = document.createElement("div");
+      productCard.classList.add("product-card");
 
-const modalBtn = document.querySelector("#subscribe-button");
-modalBtn.addEventListener("click", function () {
-  var email = document.getElementById("email-input").value;
-  console.log(`Email: ${email}`);
-});
+      let price;
+      if (product.newPrice) {
+        price = `<p class="product-price">
+          <span class="original-price">${product.originalPrice}</span>
+          <span class="new-price">${product.newPrice}</span>
+          <span class="percentage-off">${product.percentageOff}% off</span>
+        </p>`;
+      } else {
+        price = `<p class="product-price">${product.originalPrice}</p>`;
+      }
+
+      productCard.innerHTML = `
+        <img src="${product.images[0]}" alt="${product.name}" class="product-image">
+        <h2 class="product-name">${product.name}</h2>
+        ${price}
+        <div class="product-rating">
+          <span class="rating-value">${product.rating}</span>
+          <span class="rating-star">&#9733;</span>
+        </div>
+        <p class="product-description">${product.description}</p>
+      `;
+
+      productContainer.appendChild(productCard);
+    });
+  });

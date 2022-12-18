@@ -46,23 +46,7 @@ btnMobileNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
-//MODAL WINDOW
-window.addEventListener("load", function () {
-  document.getElementById("modal-container").style.display = "block";
-});
-
-document.getElementById("close-button").addEventListener("click", function () {
-  document.getElementById("modal-container").style.display = "none";
-});
-
-const modalBtn = document.querySelector("#subscribe-button");
-modalBtn.addEventListener("click", function () {
-  var email = document.getElementById("email-input").value;
-  console.log(`Email: ${email}`);
-});
-
 // CHECKBOX VALIDATION
-// get a reference to all the checkbox elements
 // get a reference to all the checkbox elements
 const checkboxes = document.querySelectorAll(
   '.smartwatch input[type="checkbox"]'
