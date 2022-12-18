@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Product-page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./img/logo.png" alt="ORALIFE logo" />
+      <!-- /* NAVIGATION */ -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="./index.html">Home</a></li>
+          <li><a class="main-nav-link" href="#">About</a></li>
+          <li><a class="main-nav-link" href="./contact.html">Contact</a></li>
+          <li><a class="main-nav-link" href="./product.html">Product</a></li>
+          <li><a class="main-nav-link" href="#">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="description">
+        <p>HOME &#8250; SMARTWATCH - BIP U</p>
+      </div>
+      <!-- /* SECTION CONTACT */ -->
+      <section class="section-product">
+        <div class="container grid grid--2--cols">
+          <div class="product-img">
+            <img
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPHW3_VW_PF+watch-41-alum-silver-nc-8s_VW_PF_WF_CO+watch-face-41-nike7s-desertberry-spruceaura_VW_PF_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661119193463%2C1661977748291%2C1662143397894"
+              alt="smartwatch"
+            />
+          </div>
+          <div class="product-text">
+            <h2 class="form-heading">Smartwatch - Bip U</h2>
+            <p class="heading-news">$211.00</p>
+            <div class="star-product">
+              <span class="stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </span>
+              <p>No reviews</p>
+            </div>
+            <div class="stock">
+              <p>Availability:</p>
+              <p id="green">&#x2714;In Stock</p>
+            </div>
+            <p class="subheading">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+              itaque dolor id corrupti autem error est magnam quae voluptas,
+              expedita.
+            </p>
+            <div class="size">
+              <p class="product-size">Size:</p>
+              <div class="size-select">
+                <a class="size-description" id="size-s">S</a>
+                <a class="size-description" id="size-m">M</a>
+                <a class="size-description" id="size-l">L</a>
+              </div>
+            </div>
+            <div class="colors">
+              <p class="product-size">Colors:</p>
+              <input id="blue" type="radio" name="color" class="color" /><label
+                for="blue"
+              ></label>
+              <input id="red" type="radio" name="color" class="color" /><label
+                for="red"
+              ></label>
+              <input
+                id="army-green"
+                type="radio"
+                name="color"
+                class="color"
+              /><label for="army-green"></label>
+            </div>
+            <div class="material">
+              <p class="product-size">Material:</p>
+              <div class="material-select">
+                <a class="material-description" id="felt">Felt</a>
+                <a class="material-description" id="leather">Leather</a>
+                <a class="material-description" id="denim">Denim</a>
+              </div>
+            </div>
+            <div class="quantity-container">
+              <p class="product-size">Quantity:</p>
+              <button class="decrement">-</button>
+              <input type="text" value="1" min="1" max="100" class="quantity" />
+              <button class="increment">+</button>
+            </div>
+            <a class="add-to-cart-btn">buy it now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- /* SECTION DESCRIPTION */ -->
+      <section class="section-description">
+        <div class="text-description">
+          <p>Description</p>
+        </div>
+        <div class="container grid grid--2--cols descriptiton">
+          <div class="product-description">
+            <h4 class="heading-secondary">Product Description</h4>
+            <p class="watch-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates quis voluptatibus nostrum hic quam impedit mollitia
+              ipsa praesentium! At deleniti natus cum nihil voluptatum eaque
+              fuga suscipit, sint optio delectus.
+            </p>
+            <div class="logo-description">
+              <ion-icon
+                class="icon-description"
+                name="battery-charging-outline"
+              ></ion-icon>
+              <div class="logo-text">
+                <h6 class="heading-secondary">Playtime 20+ Hours</h6>
+                <p class="watch-description">
+                  Nunc nec partitor turpis. in eu risus enim. In vitae mallis
+                  elit.
+                </p>
+              </div>
+            </div>
+            <div class="logo-description">
+              <ion-icon
+                class="icon-description"
+                name="volume-medium-outline"
+              ></ion-icon>
+              <div class="logo-text">
+                <h6 class="heading-secondary">HD Noise Cancelling</h6>
+                <p class="watch-description">
+                  vivamus finibus vel mauris ut vehicula.
+                </p>
+              </div>
+            </div>
+            <div class="logo-description">
+              <ion-icon
+                class="icon-description"
+                name="musical-notes-outline"
+              ></ion-icon>
+              <div class="logo-text">
+                <h6 class="heading-secondary">Dolby Atmos Sound</h6>
+                <p class="watch-description">
+                  Nullan a manga portitor, dictum risus nec, faucibus sapien.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="img-description">
+            <img
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPGW3ref_VW_PF+watch-41-alum-starlight-nc-8s_VW_PF_WF_CO+watch-face-41-nike7s-brightcrimson-ghostgreen_VW_PF_WF_CO?wid=1400&hei=1400&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661983458121%2C1661979031453%2C1662145356123"
+              alt="smartwatch"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- /* SECTION FOOTER */ -->
+      <footer>
+        <div class="content">
+          <div class="footer-column">
+            <h3>Company Info</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Features</h3>
+            <ul>
+              <li><a href="#">Business Marketing</a></li>
+              <li><a href="#">User Analytic</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">IOS & Android</a></li>
+              <li><a href="#">Watch a Demo</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Get In Touch</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><ion-icon name="call-outline"></ion-icon> (480) 555-0103</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon name="location-outline"></ion-icon>4517 Washington
+                  Ave.Manchester, Kentucky 39495</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><ion-icon name="mail-outline"></ion-icon
+                  >debra.holt@example.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>Made with love from Ariani</p>
+          <div class="footer-icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./product.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* @media screen and (max-width: 768px) {
+  .section-head .head {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header .main-nav {
+    display: none;
+  }
+
+  .section-how .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-how .step-text-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-product .grid-3 {
+    overflow-x: scroll;
+  }
+
+  .section-watches .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-call-to-action .container {
+    display: none;
+  }
+
+  .section-news .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer .content {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 548px) {
+  .popular-col {
+    margin: 0 40px;
+  }
+} */
