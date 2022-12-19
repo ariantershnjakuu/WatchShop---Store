@@ -516,7 +516,7 @@ body {
 }
 
 #smartwatch-check {
-  position: absolute;
+  align-self: flex-end;
   top: 1.2rem;
   right: 1rem;
   font-size: 1.6rem;
@@ -613,7 +613,7 @@ body {
 .watch-text-box {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 1.6rem;
   margin-bottom: 5rem;

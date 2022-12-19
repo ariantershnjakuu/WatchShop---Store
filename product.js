@@ -178,9 +178,7 @@ colorForm.addEventListener("change", (event) => {
 
 // CHECKBOX VALIDATION
 // get a reference to all the checkbox elements
-const checkboxes = document.querySelectorAll(
-  '.smartwatch input[type="checkbox"]'
-);
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
 let total = 0; // variable to store the total price
 
@@ -190,15 +188,15 @@ checkboxes.forEach((checkbox) => {
     // if the checkbox is checked
     if (this.checked) {
       // get a reference to the price element
-      const price = this.parentElement.parentElement.parentElement
-        .querySelector(".discount-paragraph")
+      const price = "${price}"
+        .querySelector("${price}")
         .textContent.replace("$", "");
       // add the price to the total
       total += parseFloat(price);
     } else {
       // if the checkbox is unchecked, get a reference to the price element
-      const price = this.parentElement.parentElement.parentElement
-        .querySelector(".discount-paragraph")
+      const price = "${price}"
+        .querySelector("${price}")
         .textContent.replace("$", "");
       // subtract the price from the total
       total -= parseFloat(price);

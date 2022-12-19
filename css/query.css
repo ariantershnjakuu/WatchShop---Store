@@ -80,7 +80,7 @@
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     backdrop-filter: blur(10px);
     top: 0;
@@ -133,9 +133,18 @@
     font-size: 43.75%;
   }
 
+  #modal {
+    font-size: 43.76%;
+    width: 37rem;
+  }
+
   .head {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
+  }
+
+  .heading {
+    padding: 0 5rem;
   }
 
   .head-img-box img {
@@ -172,7 +181,7 @@
   }
 
   .watch-img-box img {
-    width: 50%;
+    width: 25rem;
     border-radius: 2rem;
   }
 
@@ -213,7 +222,7 @@
   }
 
   .step-img-box img {
-    width: 30rem;
+    width: 25rem;
   }
 
   .section-how .step-text-box {
@@ -235,6 +244,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
     text-align: center;
+    justify-items: center;
   }
 
   .support-card {
@@ -242,8 +252,7 @@
   }
 
   .product-description {
-    max-width: 30%;
-    text-align: center;
+    text-align: start;
   }
 
   .img-description img {
@@ -252,5 +261,55 @@
   }
   .main-nav {
     height: 82rem;
+  }
+
+  .advantage {
+    font-size: 4rem;
+  }
+
+  .container-contact {
+    padding: 4rem 2rem;
+    margin: 3rem 3rem;
+  }
+
+  .product-img img {
+    width: 35rem;
+    display: flex;
+    margin: auto;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .product-text {
+    align-items: center;
+  }
+
+  .material {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .add-to-cart-btn {
+    width: 40%;
+    margin: 3rem auto;
+  }
+
+  .section-description .descriptiton {
+    padding: 0 2rem;
+  }
+
+  #description {
+    margin: 0 4rem 4rem;
+  }
+
+  .product-card {
+    width: 85%;
+    margin: 0;
+  }
+
+  .features {
+    top: 30rem;
   }
 }

@@ -12,3 +12,12 @@ modalBtn.addEventListener("click", function () {
   var email = document.getElementById("email-input").value;
   console.log(`Email: ${email}`);
 });
+
+// Mobile navigation toggle
+const btnMobileNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+// Add an event listener to the button
+btnMobileNav.addEventListener("click", function () {
+  // Toggle the "open" class on the menu
+  header.classList.toggle("nav-open");
+});

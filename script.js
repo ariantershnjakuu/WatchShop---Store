@@ -37,11 +37,3 @@ nextBtn.addEventListener("click", function () {
 // Initialize the carousel by setting the initial item
 updateItem(currentIndex);
 
-// Mobile navigation toggle
-const btnMobileNav = document.querySelector(".btn-mobile-nav");
-const header = document.querySelector(".header");
-// Add an event listener to the button
-btnMobileNav.addEventListener("click", function () {
-  // Toggle the "open" class on the menu
-  header.classList.toggle("nav-open");
-});
