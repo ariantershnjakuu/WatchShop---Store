@@ -98,18 +98,15 @@
             </div>
             <div class="colors">
               <p class="product-size">Colors:</p>
-              <input id="blue" type="radio" name="color" class="color" /><label
+              <input type="radio" name="color" class="color blue" /><label
                 for="blue"
               ></label>
-              <input id="red" type="radio" name="color" class="color" /><label
+              <input type="radio" name="color" class="color red" /><label
                 for="red"
               ></label>
-              <input
-                id="army-green"
-                type="radio"
-                name="color"
-                class="color"
-              /><label for="army-green"></label>
+              <input type="radio" name="color" class="color green" /><label
+                for="army-green"
+              ></label>
             </div>
             <div class="material">
               <p class="product-size">Material:</p>
@@ -128,25 +125,6 @@
             <a class="add-to-cart-btn">buy it now</a>
           </div>
         </div>
-        <div id="product-container"></div>
-        <form id="color-filter">
-          <label class="clear-filter">
-            <input type="radio" name="color" value="all" checked />
-            Clear Filter
-          </label>
-          <label>
-            <input type="radio" name="color" value="red" />
-            Red
-          </label>
-          <label>
-            <input type="radio" name="color" value="green" />
-            Green
-          </label>
-          <label>
-            <input type="radio" name="color" value="blue" />
-            Blue
-          </label>
-        </form>
       </section>
 
       <!-- /* SECTION DESCRIPTION */ -->
@@ -210,6 +188,27 @@
             </div>
           </div>
         </div>
+        <div id="product-container"></div>
+        <form id="color-filter">
+          <label class="clear-filter">
+            <input type="radio" name="color" value="all" checked />
+            Clear Filter
+          </label>
+          <label>
+            <input type="radio" name="color" value="red" class="color red" />
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="color"
+              value="green"
+              class="color green"
+            />
+          </label>
+          <label>
+            <input type="radio" name="color" value="blue" class="color blue" />
+          </label>
+        </form>
       </section>
 
       <!-- /* FOOTER */ -->

@@ -11,7 +11,10 @@
     "color": "red",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGU3ref_VW_PF+watch-45-alum-red-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661117948533%2C1661969684847",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGU3ref_VW_PF+watch-45-alum-red-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661117948533%2C1661969684847"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -34,7 +37,10 @@
     "color": "red",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKY3_VW_PF+watch-41-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-41-hermes8s-complex-orange_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776577829%2C1663623202344%2C1663367449429",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKY3_VW_PF+watch-41-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-41-hermes8s-complex-orange_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776577829%2C1663623202344%2C1663367449429"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -57,7 +63,10 @@
     "color": "red",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPLF3_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660780879034%2C1661970017588",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPLF3_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660780879034%2C1661970017588"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -80,7 +89,10 @@
     "color": "red",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPK93_VW_PF+watch-41-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-41-hermes8s-luckyhorse-bleulin_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776587284%2C1663623202344%2C1660717420826",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPK93_VW_PF+watch-41-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-41-hermes8s-luckyhorse-bleulin_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776587284%2C1663623202344%2C1660717420826"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -103,7 +115,10 @@
     "color": "blue",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MP8G3ref_VW_PF+watch-41-stainless-silver-cell-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660781095827%2C1660710603398",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MP8G3ref_VW_PF+watch-41-stainless-silver-cell-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660781095827%2C1660710603398"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -126,7 +141,10 @@
     "color": "blue",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGQ3ref_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661121388433%2C1661970017588",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGQ3ref_VW_PF+watch-45-alum-silver-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661121388433%2C1661970017588"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -149,7 +167,10 @@
     "color": "blue",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKV3_VW_PF+watch-45-stainless-black-cell-hermes8s_VW_PF_WF_CO+watch-face-45-hermes8s-complex-noir_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776286724%2C1661362914087%2C1660714277748",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKV3_VW_PF+watch-45-stainless-black-cell-hermes8s_VW_PF_WF_CO+watch-face-45-hermes8s-complex-noir_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776286724%2C1661362914087%2C1660714277748"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -172,7 +193,10 @@
     "color": "blue",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPLG3_VW_PF+watch-45-alum-midnight-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660780873420%2C1661969013156",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPLG3_VW_PF+watch-45-alum-midnight-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660780873420%2C1661969013156"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -195,7 +219,10 @@
     "color": "green",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGC3ref_VW_PF+watch-45-alum-midnight-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660778393160%2C1661969013156",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGC3ref_VW_PF+watch-45-alum-midnight-nc-8s_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660778393160%2C1661969013156"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -218,7 +245,10 @@
     "color": "green",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPH73ref_VW_PF+watch-45-alum-starlight-nc-8s_VW_PF_WF_CO+watch-face-44-nike-se-coconutmilk-sesame_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660757977271%2C1661970455365%2C1661719938406",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPH73ref_VW_PF+watch-45-alum-starlight-nc-8s_VW_PF_WF_CO+watch-face-44-nike-se-coconutmilk-sesame_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660757977271%2C1661970455365%2C1661719938406"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -241,7 +271,10 @@
     "color": "green",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKU3_VW_PF+watch-45-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-45-hermes8s-complex-orange_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776287781%2C1663623165465%2C1663367460698",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPKU3_VW_PF+watch-45-stainless-silver-cell-hermes8s_VW_PF_WF_CO+watch-face-45-hermes8s-complex-orange_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660776287781%2C1663623165465%2C1663367460698"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,
@@ -264,7 +297,10 @@
     "color": "green",
     "material": "felt",
     "availability": true,
-    "images": ["./img/samsung.png", "./img/samsung.png"],
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGM3ref_VW_PF+watch-44-alum-starlight-nc-se_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661270972230%2C1660759485744",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQGM3ref_VW_PF+watch-44-alum-starlight-nc-se_VW_PF_WF_CO?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661270972230%2C1660759485744"
+    ],
     "details": {
       "description": "Quisque sem ligula, tincidunt vel tincidunt ac, pulvinar ac leo. Nullam fringilla libero sem, et euismod felis sodales vitae. Donec consequat libero et quam ullamcorper ultrices. Vestibulum mattis tincidunt mauris, ac scelerisque magna pretium eget. Morbi gravida placerat dolor vel imperdiet. Ut vulputate ligula ut finibus luctus. Nullam tincidunt tortor ac urna feugiat, id maximus nisi pellentesque. Nullam sed nibh pulvinar ligula sodales elementum non a odio. Quisque ornare nulla nec enim fermentum lacinia. Aenean cursus diam vel nibh posuere tincidunt. Vivamus congue metus quis metus fringilla malesuada. Aliquam vehicula risus neque, quis imperdiet mauris luctus in. Duis sed nisl justo. Vestibulum in ipsum eu enim luctus egestas. Nam faucibus urna ut semper ullamcorper. Ut fermentum leo mi, ac mollis augue sollicitudin in.",
       "playtimeHours": true,

@@ -122,35 +122,88 @@ buyNowBtn.addEventListener("click", () => {
 //PRODUCTS JSON
 const productContainer = document.getElementById("product-container");
 
+function renderProducts(products) {
+  productContainer.innerHTML = "";
+  products.forEach((product) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+
+    let price;
+    if (product.newPrice) {
+      price = `<p class="product-price">
+        <span class="original-price">$${product.originalPrice}</span>
+        <span class="new-price">$${product.newPrice}</span>
+        <span class="percentage-off">${product.percentageOff}% off</span>
+      </p>`;
+    } else {
+      price = `<p class="product-price">
+        <span class="new-price">$${product.originalPrice}</span>
+      </p>`;
+    }
+
+    productCard.innerHTML = `
+    <input type="checkbox" name="checbox" id="smartwatch-check" />
+    <img src="${product.images[0]}" alt="${product.name}" class="product-image">
+      <h2 class="product-name">${product.name}</h2>
+      ${price}
+      <div class="product-rating">
+        <span class="product-color ${product.color}"></span>
+        </div>
+      <p class="product-description">${product.description}</p>
+    `;
+
+    productContainer.appendChild(productCard);
+  });
+}
+
 fetch("products.json")
   .then((response) => response.json())
   .then((products) => {
-    products.forEach((product) => {
-      const productCard = document.createElement("div");
-      productCard.classList.add("product-card");
-
-      let price;
-      if (product.newPrice) {
-        price = `<p class="product-price">
-          <span class="original-price">${product.originalPrice}</span>
-          <span class="new-price">${product.newPrice}</span>
-          <span class="percentage-off">${product.percentageOff}% off</span>
-        </p>`;
-      } else {
-        price = `<p class="product-price">${product.originalPrice}</p>`;
-      }
-
-      productCard.innerHTML = `
-        <img src="${product.images[0]}" alt="${product.name}" class="product-image">
-        <h2 class="product-name">${product.name}</h2>
-        ${price}
-        <div class="product-rating">
-          <span class="rating-value">${product.rating}</span>
-          <span class="rating-star">&#9733;</span>
-        </div>
-        <p class="product-description">${product.description}</p>
-      `;
-
-      productContainer.appendChild(productCard);
-    });
+    renderProducts(products);
   });
+
+const colorForm = document.querySelector("#color-filter");
+colorForm.addEventListener("change", (event) => {
+  const color = event.target.value;
+  fetch("products.json")
+    .then((response) => response.json())
+    .then((products) => {
+      renderProducts(
+        color === "all"
+          ? products
+          : products.filter((product) => product.color === color)
+      );
+    });
+});
+
+// CHECKBOX VALIDATION
+// get a reference to all the checkbox elements
+const checkboxes = document.querySelectorAll(
+  '.smartwatch input[type="checkbox"]'
+);
+
+let total = 0; // variable to store the total price
+
+// add a 'change' event listener to each checkbox
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", function () {
+    // if the checkbox is checked
+    if (this.checked) {
+      // get a reference to the price element
+      const price = this.parentElement.parentElement.parentElement
+        .querySelector(".discount-paragraph")
+        .textContent.replace("$", "");
+      // add the price to the total
+      total += parseFloat(price);
+    } else {
+      // if the checkbox is unchecked, get a reference to the price element
+      const price = this.parentElement.parentElement.parentElement
+        .querySelector(".discount-paragraph")
+        .textContent.replace("$", "");
+      // subtract the price from the total
+      total -= parseFloat(price);
+    }
+    // log the total to the console
+    console.log(total);
+  });
+});
