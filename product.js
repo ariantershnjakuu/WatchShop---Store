@@ -177,31 +177,27 @@ colorForm.addEventListener("change", (event) => {
 });
 
 // CHECKBOX VALIDATION
-// get a reference to all the checkbox elements
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-let total = 0; // variable to store the total price
-
-// add a 'change' event listener to each checkbox
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener("change", function () {
-    // if the checkbox is checked
-    if (this.checked) {
-      // get a reference to the price element
-      const price = "${price}"
-        .querySelector("${price}")
-        .textContent.replace("$", "");
-      // add the price to the total
-      total += parseFloat(price);
-    } else {
-      // if the checkbox is unchecked, get a reference to the price element
-      const price = "${price}"
-        .querySelector("${price}")
-        .textContent.replace("$", "");
-      // subtract the price from the total
-      total -= parseFloat(price);
+function calculateTotal() {
+  let total = 0;
+  const productCards = document.querySelectorAll(".product-card");
+  productCards.forEach((productCard) => {
+    const checkbox = productCard.querySelector("input[type='checkbox']");
+    if (checkbox.checked) {
+      const priceElement = productCard.querySelector(".new-price");
+      const price = parseFloat(priceElement.textContent.substring(1)); // remove the '$' and parse the price as a float
+      total += price;
     }
-    // log the total to the console
-    console.log(total);
   });
+  console.log(`Total: $${total.toFixed(2)}`);
+}
+
+const checkboxes = document.querySelectorAll("input[type='checkbox']");
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", calculateTotal);
+});
+
+productContainer.addEventListener("change", (event) => {
+  if (event.target.type === "checkbox") {
+    calculateTotal();
+  }
 });
